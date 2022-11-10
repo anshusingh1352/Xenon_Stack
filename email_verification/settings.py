@@ -35,6 +35,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'home',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -153,5 +154,5 @@ MESSAGE_TAGS = {
  }
 
 SESSION_EXPIRE_AT_BROWSER_CLOSE = True
-SESSION_COOKIE_AGE = 120 
+SESSION_COOKIE_AGE = 30
 # SESSION_SAVE_EVERY_REQUEST = True

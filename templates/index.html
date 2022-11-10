@@ -83,7 +83,7 @@
                                  <a class="nav-link" href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
                               </li>
                               <li class="nav-item d_none">
-                                 <a class="nav-link" href="{% url 'home' %}">Login</a>
+                                 <a class="nav-link" href="{% url 'home' %}" id="check_session">Logout</a>
                               </li>
                            </ul>
                         </div>
@@ -511,6 +511,16 @@
       <!-- sidebar -->
       <script src="{% static 'js/jquery.mCustomScrollbar.concat.min.js' %}"></script>
       <script src="{% static 'js/custom.js' %}"></script>
+      <script>
+         var x = document.getElementById("check_session");
+         var session_id='{{session_id}}'
+         if (session_id){
+            x.style.display = "none";
+         }
+         else{
+            x.style.display = "block";
+         }
+      </script>
    </body>
 </html>
 

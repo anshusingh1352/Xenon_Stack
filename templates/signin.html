@@ -28,7 +28,8 @@
             <div class="card card-4">
                 <div class="card-body">
                     <h2 class="title">Login Form</h2>
-                    <form method="POST">
+                    <form method="POST" action="{% url 'home' %}">
+                        {% csrf_token %}
                         <div class="row row-space">
                             <div class="col-2">
                                 <div class="input-group">
@@ -64,6 +65,7 @@
 
     <!-- Main JS-->
     <script src="{% static 'js/global.js' %}"></script>
+
 
 </body>
 </html>

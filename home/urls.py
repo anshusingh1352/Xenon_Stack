@@ -17,4 +17,7 @@ urlpatterns = [
     path('contact',views.Contact,name='contact'),
     path('laptop',views.laptop,name='laptop'),
     path('product',views.product,name='product'),
+    path('savedata',views.savedata,name='savedata'),
+    path('savedata_view',views.savedata_view,name='savedata_view'),
+
 ]
